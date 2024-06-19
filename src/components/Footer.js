@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -7,7 +8,7 @@ const Footer = () => {
     <div className="px-6 py-20 flex flex-col lg:flex-row text-center lg:text-start gap-20 text-[#4F5665] font-[400]">
       <div className="flex flex-col items-center lg:items-start">
         <div className="h-20 w-40 mx-auto lg:mx-0">
-          <img src="/logo.svg" alt="logo" className="h-full py-2 w-full object-cover"/>
+          <Image src="/logo.svg" alt="logo" width={100} height={100} className="h-full py-2 w-full object-cover"/>
         </div>
         <p>Embrace your network</p>
         <div className="flex items-center w-full justify-center lg:justify-start gap-3 pt-6">

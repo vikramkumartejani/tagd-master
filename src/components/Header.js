@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -12,9 +13,10 @@ const Header = () => {
   return (
     <div className="w-full py-4 md:py-10 flex justify-between px-6 text-black items-center bg-white">
       <div className="flex items-center gap-8">
-        <img
+        <Image
           src="logo.svg"
           alt="logo"
+          width={200} height={50}
           className="h-[50px] md:w-[200px]"
         />
         <ul className="hidden md:flex items-center gap-6">
@@ -25,7 +27,7 @@ const Header = () => {
           </li>
           <li>
             <Link href="/" className="text-[18px] font-normal leading-[9px]">
-              So funktioniert's
+              So funktioniert&apos;s
             </Link>
           </li>
           <li>
@@ -77,7 +79,7 @@ const Header = () => {
           </li>
           <li>
             <Link href="/" className="text-[18px] font-normal leading-[9px]">
-              So funktioniert's
+              So funktioniert&apos;s
             </Link>
           </li>
           <li>

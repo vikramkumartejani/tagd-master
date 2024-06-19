@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full lg:w-auto mb-8 lg:mb-0">
-        <img src="/hero.svg" alt="hero" className="w-full h-auto lg:h-[350px]" />
+        <Image src="/hero.svg" alt="hero" width={500} height={500} className="w-full h-auto lg:h-[400px]" />
       </div>
     </div>
   );

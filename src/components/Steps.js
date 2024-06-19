@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Steps = () => {
@@ -16,7 +17,7 @@ const Steps = () => {
               direkt los.
             </p>
           </div>
-          <img src="/Log In-cropped.svg" alt="image" className="custom-box-shadow h-[200px] md:h-[400px] mx-auto md:mx-0" />
+          <Image src="/Log In-cropped.svg" width={185} height={200} alt="image" className="custom-box-shadow h-[200px] md:h-[400px] mx-auto md:mx-0" />
         </div>
         {/* Step Two */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center px-6 md:px-10 gap-10">
@@ -24,10 +25,10 @@ const Steps = () => {
             <h5 className="text-2xl lg:text-3xl font-bold">2. <br /> <span className="text-[#F1CF90]"> Kauf </span>Posten</h5>
             <p className="text-[#4F5665] text-[18px] leading-[25px] max-w-[320px] mx-auto md:mx-0">
               Kaufe und poste ein Produkt von einer unserer Partnerunternehmen in deine Instagram Story 
-              <img src='/insta.svg' alt="Instagram" className="inline-block ml-1" />
+              <Image src='/insta.svg' width={20} height={20} alt="Instagram" className="inline-block ml-1" />
             </p>
           </div>
-          <img src="/hero.svg" alt="image" className="h-[200px] md:h-[300px] mx-auto md:mx-0" />
+          <Image src="/hero.svg" alt="image" width={350} height={200} className="h-[200px] md:h-[300px] mx-auto md:mx-0" />
         </div>
         {/* Step Three */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center px-6 md:px-10 gap-10">
@@ -37,7 +38,7 @@ const Steps = () => {
               Sobald der Post von uns Verfiziert wurde, erhälst du Cashback 🤑🤑
             </p>
           </div>
-          <img src="/hero.svg" alt="image" className="h-[200px] md:h-[300px] mx-auto md:mx-0"/>
+          <Image src="/hero.svg" alt="image" width={350} height={350} className="h-[200px] md:h-[300px] mx-auto md:mx-0"/>
         </div>
       </div>
     </div>

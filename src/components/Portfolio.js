@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Portfolio = () => {
@@ -5,7 +6,7 @@ const Portfolio = () => {
     <div className="px-6 pt-14">
       <h1 className="font-medium text-3xl md:text-5xl text-center">Überzeug dich <span className="text-[#F1CF90]">selbst</span></h1>
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-6">
-        <img src="/yourself.svg" alt="profile" className="h-[350px] w-auto" />
+        <Image src="/yourself.svg" alt="profile" width={350} height={350} className="h-[350px] w-auto" />
         <div className="bg-white rounded-[33px] w-full md:w-[600px] py-[14px] px-6">
           <h3 className="text-2xl md:text-3xl font-bold text-[#4F5665]">Moses, 22 Jahre</h3>
           <div className="my-10 flex flex-col gap-4">

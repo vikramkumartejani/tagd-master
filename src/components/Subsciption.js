@@ -1,6 +1,7 @@
 import React from "react";
 import { ImCross } from "react-icons/im";
 import { FaCheck } from "react-icons/fa6";
+import Image from "next/image";
 
 const Subscription = () => {
   return (
@@ -9,7 +10,7 @@ const Subscription = () => {
       <div className="grid lg:grid-cols-3 gap-[50px] py-9">
         {/* Subs One */}
         <div className="flex flex-col items-center border border-[#DDDDDD] hover:border-[#F53838] transition duration-300 rounded-[5px] py-14 px-7">
-          <img src="/subscription1.png" alt="logo" className="h-[80px] w-[80px]" />
+          <Image src="/subscription1.png" alt="logo" width={80} height={80} className="h-[80px] w-[80px]" />
           <h3 className="text-xl font-[700] py-6">Standard</h3>
           <div className=" w-full rounded-lg overflow-hidden">
 
@@ -79,7 +80,7 @@ const Subscription = () => {
         </div>
         {/* Subs Two */}
         <div className="flex flex-col items-center border border-[#DDDDDD] hover:border-[#F53838] transition duration-300 rounded-[5px] py-14 px-7">
-          <img src="/subcription2.png" alt="logo" className="h-[80px] w-[80px]" />
+          <Image src="/subcription2.png" alt="logo" width={80} height={80} className="h-[80px] w-[80px]" />
           <h3 className="text-xl font-[700] text-[#F0CF90] pt-6 pb-3">Exclusive</h3>
           <p className="text-xs">Monatlich kündbar</p>
           <div className="w-full rounded-lg overflow-hidden">
@@ -150,7 +151,7 @@ const Subscription = () => {
         </div>
         {/* Subs Three */}
         <div className="flex flex-col items-center border border-[#DDDDDD] hover:border-[#F53838] transition duration-300 rounded-[5px] py-14 px-7">
-          <img src="/subcription2.png" alt="logo" className="h-[80px] w-[80px]" />
+          <Image src="/subcription2.png" alt="logo" width={80} height={80} className="h-[80px] w-[80px]" />
           <h3 className="text-xl font-[700] text-[#F0CF90] pt-6 pb-3">Exclusive</h3>
           <p className="text-xs">Monatlich kündbar</p>
           <div className="w-full rounded-lg overflow-hidden">
